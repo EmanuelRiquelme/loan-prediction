@@ -14,7 +14,3 @@ def split_data(data,split_size = [.8,.2]):
     train_data,train_labels = train_data[...,:-1],train_data[...,-1]
     test_data,test_labels = test_data[...,:-1],test_data[...,-1]
     return train_data,train_labels,test_data,test_labels
-
-if __name__ == '__main__':
-    data = np.random.rand(569,12)
-    train_data,train_labels,test_data,test_label = split_data(data)
